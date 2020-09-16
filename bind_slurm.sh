@@ -2,7 +2,7 @@
 
 # Specify system-specific bindings to use here.
 
-CONFIG=juwels.conf
+CONFIG=hlrnb.conf
 
 
 
@@ -50,15 +50,15 @@ ${RTEMPDIR}/etc_passwd:/etc/passwd,\
 ${RTEMPDIR}/etc_group:/etc/group\
 "
 
-# Setup Singularity (library) path and bind mount environment.
+# Setup Singularity bind mount and (library) path environment.
 
 if [[ ! -z "$SLURM_PREPEND_PATH" ]]; then
-export SINGULARITYENV_PREPEND_PATH=${SINGULARITYENV_PREPEND_PATH}:${SLURM_PREPEND_PATH}
+export SINGULARITYENV_PREPEND_PATH=${SLURM_PREPEND_PATH}${SINGULARITYENV_PREPEND_PATH:+:$SINGULARITYENV_PREPEND_PATH}
 echo SINGULARITYENV_PREPEND_PATH: "${SINGULARITYENV_PREPEND_PATH}"
 fi
 
 if [[ ! -z "${SLURM_LD_LIBRARY_PATH}" ]]; then
-export SINGULARITYENV_LD_LIBRARY_PATH=${SLURM_LD_LIBRARY_PATH}
+export SINGULARITYENV_LD_LIBRARY_PATH=${SLURM_LD_LIBRARY_PATH}${SINGULARITYENV_LD_LIBRARY_PATH:+:$SINGULARITYENV_LD_LIBRARY_PATH}
 echo SINGULARITYENV_LD_LIBRARY_PATH: "${SINGULARITYENV_LD_LIBRARY_PATH}"
 fi
 
