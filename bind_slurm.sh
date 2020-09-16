@@ -1,12 +1,24 @@
 #!/bin/bash
 
-# Specify bindings to use.
+# Specify system-specific bindings to use here.
 
-source juwels.conf
+CONFIG=hlrnb.conf
+
+
+
+# Load bindings from config.
+
+source ${CONFIG}
+
+echo Will use: ${CONFIG}
+
+# Check if singularity is available.
+
+singularity --version || { echo Singularity not found... exiting.; exit; }
 
 # Get Singularity image path.
 
-SINGULARITY_COMMAND="$@" # Preserve original command for while-approach below
+SINGULARITY_COMMAND="$@" # Preserve original argument
 
 echo Will execute: ${SINGULARITY_COMMAND}
 
@@ -38,7 +50,13 @@ ${RTEMPDIR}/etc_passwd:/etc/passwd,\
 ${RTEMPDIR}/etc_group:/etc/group\
 "
 
-# Setup bind mount environment.
+# Setup Singularity (library) path and bind mount environment.
+
+export SINGULARITYENV_PREPEND_PATH=${SLURM_PREPEND_PATH}
+export SINGULARITYENV_LD_LIBRARY_PATH=${SLURM_LD_LIBRARY_PATH}
+
+echo SINGULARITY_PREPEND_PATH: ${SINGULARITYENV_PREPEND_PATH}
+echo SINGULARITY_LD_LIBRARY_PATH: ${SINGULARITYENV_LD_LIBRARY_PATH}
 
 SINGULARITY_BIND=${SLURM_COMMANDS},${SYSTEM_SPECS}
 SINGULARITY_BIND=${SINGULARITY_BIND},${MERGED_PASSWD_GROUP}
