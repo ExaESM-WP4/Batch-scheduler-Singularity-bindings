@@ -2,7 +2,7 @@
 
 # Specify system-specific bindings to use here.
 
-CONFIG=hlrnb.conf
+CONFIG=nesh.conf
 
 
 
@@ -38,10 +38,13 @@ TEMPDIR=$(mktemp -d $(pwd)/tmp.XXXXXXXX)
 echo Temporary directory: ${TEMPDIR}
 trap "echo Deleting: ${TEMPDIR}; rm -rf ${TEMPDIR}" 0
 
-singularity run ${IMAGE} cp -p /etc/passwd ${TEMPDIR}/etc_passwd
-singularity run ${IMAGE} cp -p /etc/group ${TEMPDIR}/etc_group
+singularity exec ${IMAGE} cp -p /etc/passwd ${TEMPDIR}/etc_passwd
+singularity exec ${IMAGE} cp -p /etc/group ${TEMPDIR}/etc_group
 cat /etc/passwd | grep slurm >> ${TEMPDIR}/etc_passwd
 cat /etc/group | grep slurm >> ${TEMPDIR}/etc_group
+
+#getent passwd >> ${TEMPDIR}/etc_passwd
+#getent group >> ${TEMPDIR}/etc_group
 
 RTEMPDIR=$(basename $TEMPDIR) # get relative temp dir path
 
