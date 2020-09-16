@@ -2,7 +2,7 @@
 
 # Specify bindings to use.
 
-source hlrnb.conf
+source juwels.conf
 
 # Get Singularity image path.
 
