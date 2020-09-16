@@ -20,4 +20,4 @@ exit
 Deleting: <path-to-script>/tmp.CU7R16oG
 ```
 
-The wrapper script above enables Dask jobqueue workflows (see e.g. [here](https://github.com/ExaESM-WP4/dask-jobqueue-configs) for examples and Jobqueue configuration files) from containerized JupyterLab analysis environments (see e.g. [here](https://github.com/martinclaus/py-da-stack) or [there](https://github.com/ExaESM-WP4/Containerized-Jupyter-on-HPC)).
+The wrapper script above enables Dask jobqueue workflows (see e.g. [here](https://github.com/ExaESM-WP4/dask-jobqueue-configs) for non-container examples and Jobqueue configuration files) from containerized JupyterLab analysis environments (see e.g. [here](https://github.com/martinclaus/py-da-stack) or [there](https://github.com/ExaESM-WP4/Containerized-Jupyter-on-HPC)).
