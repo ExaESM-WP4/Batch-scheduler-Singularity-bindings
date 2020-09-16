@@ -1,24 +1,8 @@
 #!/bin/bash
 
-# Specify JUWELS bindings.
+# Specify bindings to use.
 
-SLURM_COMMANDS="\
-/usr/bin/sinfo,\
-/usr/bin/squeue,\
-/usr/bin/sbatch,\
-/usr/bin/scancel\
-"
-
-JUWELS_SPECS="\
-/var/run/munge,\
-/usr/lib64/libmunge.so.2,\
-/usr/lib64/slurm/,\
-/etc/slurm/,\
-/usr/lib64/liblua-5.1.so,\
-/usr/lib64/lua/5.1/,\
-/usr/share/lua/5.1/,\
-/opt/jsc/slurm/etc/globres.json\
-"
+source hlrnb.conf
 
 # Get Singularity image path.
 
@@ -56,7 +40,7 @@ ${RTEMPDIR}/etc_group:/etc/group\
 
 # Setup bind mount environment.
 
-SINGULARITY_BIND=${SLURM_COMMANDS},${JUWELS_SPECS}
+SINGULARITY_BIND=${SLURM_COMMANDS},${SYSTEM_SPECS}
 SINGULARITY_BIND=${SINGULARITY_BIND},${MERGED_PASSWD_GROUP}
 export SINGULARITY_BIND
 
