@@ -1,6 +1,6 @@
 # SLURM-Singularity-bindings
 
-Wrapper scripts that enable host-system SLURM commands inside the container.
+Wrapper scripts that enable host-system batch scheduler commands inside the container.
 Should be working especially with Red Hat (e.g. CentOS, ...) and Debian (e.g. Ubuntu, ...) Linux flavours.
 Tested for CentOS (7 and 8), Debian (8, 9 and 10) and Ubuntu (18.04 and 20.04) container images.
 Please note, currently only `sinfo`, `squeue`, `sbatch` and `scancel` are supported.
