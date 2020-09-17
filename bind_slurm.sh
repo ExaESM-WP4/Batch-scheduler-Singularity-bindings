@@ -2,14 +2,15 @@
 
 # Get system-specific bindings to use here.
 CONFIG=batch-bindings.conf
-source ${CONFIG} || { echo ${CONFIG} not found. Make sure to link or create it!; exit; }
+source ${CONFIG} || { echo ${CONFIG} not found. Make sure to correctly link or create it!; exit; }
 echo Will use: $(readlink batch-bindings.conf)
 
-# Check if singularity is available.
+# Check if Singularity is available.
 singularity --version || { echo Singularity not found... exiting.; exit; }
 
 # Get Singularity image path.
-# We'll Preserve the original command and then parse all inputs until we find an image file.
+# We'll preserve the original command here and parse all inputs until we find an image file.
+# Note, the $@ variable is empty after this section.
 
 ORIGINAL_SINGULARITY_COMMAND="$@"
 echo Will execute: ${ORIGINAL_SINGULARITY_COMMAND}
@@ -24,21 +25,22 @@ done
 
 echo Enable host SLURM user for: ${IMAGE}
 
-# Prepare binding of system-specific SLURM.
+# Prepare binding of system-specific SLURM user.
 #
-# We'll filter system users and if there is a slurm user, we'll add it to the 
+# We'll filter the host system users and if there is a SLURM user, we'll add it to the
 # /etc/passwd and /etc/group files used in the container.
 # 
-# This is done very similar to how singularity enables the human user inside the container:
+# This is done very similar to how Singularity iself enables the calling user inside the container:
 # First, briefly start the container to get /etc/passwd and /etc/groups from with, then
-# append users and groups to the files and bind the files when finally starting the container.
+# append users and groups to the files and bind the files when the container is finally started.
 
-# create temporary directory that'll be deleted automatically once the script exists successfully
+# For the manually assembled /etc/passwd and /etc/group files we'll create a temporary directory
+# that'll be deleted automatically once the script exists successfully.
 TEMPDIR=$(mktemp -d $(pwd)/tmp.XXXXXXXX)
 echo Temporary directory: ${TEMPDIR}
 trap "echo Deleting: ${TEMPDIR}; rm -rf ${TEMPDIR}" 0
 
-# Extract user and group info from container and (mayby) append the slurm user
+# Extract user and group info from container and (maybe) append the SLURM user.
 singularity exec ${IMAGE} cp -p /etc/passwd ${TEMPDIR}/etc_passwd
 singularity exec ${IMAGE} cp -p /etc/group ${TEMPDIR}/etc_group
 grep slurm /etc/passwd >> ${TEMPDIR}/etc_passwd
@@ -48,8 +50,8 @@ grep slurm /etc/group >> ${TEMPDIR}/etc_group
 # getent passwd | grep slurm >> ${TEMPDIR}/etc_passwd
 # getent group | grep slurm >> ${TEMPDIR}/etc_group
 
-# Create bind paths
-RTEMPDIR=$(basename $TEMPDIR) # get relative temp dir path
+# Relative bind paths are necessary because of how file system overlays are handled.
+RTEMPDIR=$(basename $TEMPDIR)
 
 MERGED_PASSWD_GROUP="\
 ${RTEMPDIR}/etc_passwd:/etc/passwd,\
