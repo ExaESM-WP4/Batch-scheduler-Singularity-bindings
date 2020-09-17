@@ -5,9 +5,9 @@ Should be working especially with Red Hat (e.g. CentOS, ...) and Debian (e.g. Ub
 Tested for CentOS (7 and 8), Debian (8, 9 and 10) and Ubuntu (18.04 and 20.04) container images.
 Please note, that for SLURM, currently only `sinfo`, `squeue`, `sbatch` and `scancel` are supported.
 
-Before being able to use the `bind_batch.sh`,  you'll have to enable the configuration for your system. Do this with (e.g for Juwels)
+Before being able to use the `bind_scheduler.sh`,  you'll have to enable the configuration for your system. Do this with (e.g for Juwels)
 ```shell
-ln -sf juwels.conf batch-bindings.conf
+ln -sf juwels.conf scheduler-bindings.conf
 ```
 
 ```shell

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Get system-specific bindings to use here.
-CONFIG=batch-bindings.conf
+CONFIG=scheduler-bindings.conf
 source ${CONFIG} || { echo ${CONFIG} not found. Make sure to correctly link or create it!; exit; }
-echo Will use: $(readlink batch-bindings.conf)
+echo Will use: $(readlink scheduler-bindings.conf)
 
 # Check if Singularity is available.
 singularity --version || { echo Singularity not found... exiting.; exit; }
