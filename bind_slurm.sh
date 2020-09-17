@@ -3,7 +3,7 @@
 # Get system-specific bindings to use here.
 CONFIG=batch-bindings.conf
 source ${CONFIG} || { echo ${CONFIG} not found. Make sure to link or create it!; exit; }
-echo Will use: ${BATCH_CONFIG_NAME}
+echo Will use: $(readlink batch-bindings.conf)
 
 # Check if singularity is available.
 singularity --version || { echo Singularity not found... exiting.; exit; }
