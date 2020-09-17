@@ -6,7 +6,6 @@ source ${CONFIG} || { echo ${CONFIG} not found. Make sure to link or create it!;
 echo Will use: ${BATCH_CONFIG_NAME}
 
 # Check if singularity is available.
-
 singularity --version || { echo Singularity not found... exiting.; exit; }
 
 # Get Singularity image path.
