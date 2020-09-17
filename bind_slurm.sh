@@ -1,16 +1,9 @@
 #!/bin/bash
 
-# Specify system-specific bindings to use here.
-
-CONFIG=nesh.conf
-
-
-
-# Load bindings from config.
-
-source ${CONFIG}
-
-echo Will use: ${CONFIG}
+# Get system-specific bindings to use here.
+CONFIG=batch-bindings.conf
+source ${CONFIG} || { echo ${CONFIG} not found. Make sure to link or create it!; exit; }
+echo Will use: ${BATCH_CONFIG_NAME}
 
 # Check if singularity is available.
 
@@ -74,4 +67,3 @@ echo SINGULARITY_BIND: "${SINGULARITY_BIND}"
 # Execute original Singularity command.
 
 ${ORIGINAL_SINGULARITY_COMMAND}
-
