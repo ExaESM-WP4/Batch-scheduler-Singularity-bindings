@@ -9,9 +9,9 @@ echo Will use: ${BATCH_CONFIG_NAME}
 singularity --version || { echo Singularity not found... exiting.; exit; }
 
 # Get Singularity image path.
+# We'll Preserve the original command and then parse all inputs until we find an image file.
 
-ORIGINAL_SINGULARITY_COMMAND="$@" # Preserve original argument
-
+ORIGINAL_SINGULARITY_COMMAND="$@"
 echo Will execute: ${ORIGINAL_SINGULARITY_COMMAND}
 
 while [[ "$#" -gt 0 ]]; do
