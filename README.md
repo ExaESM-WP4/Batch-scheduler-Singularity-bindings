@@ -12,7 +12,7 @@ ln -sf juwels.conf scheduler-bindings.conf
 
 ```shell
 $ singularity pull docker://centos:8
-$ ./bind_slurm.sh singularity shell --cleanenv centos_8.sif
+$ ./bind_scheduler.sh singularity shell --cleanenv centos_8.sif
 Will use: juwels.conf
 singularity version 3.6.1-1.20200803git8a92cf127.el7
 Will execute: singularity shell --cleanenv centos_8.sif
