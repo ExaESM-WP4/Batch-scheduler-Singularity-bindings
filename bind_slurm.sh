@@ -24,20 +24,31 @@ done
 
 echo Enable host SLURM user for: ${IMAGE}
 
-# Prepare system-specific SLURM user binding.
+# Prepare binding of system-specific SLURM.
+#
+# We'll filter system users and if there is a slurm user, we'll add it to the 
+# /etc/passwd and /etc/group files used in the container.
+# 
+# This is done very similar to how singularity enables the human user inside the container:
+# First, briefly start the container to get /etc/passwd and /etc/groups from with, then
+# append users and groups to the files and bind the files when finally starting the container.
 
+# create temporary directory that'll be deleted automatically once the script exists successfully
 TEMPDIR=$(mktemp -d $(pwd)/tmp.XXXXXXXX)
 echo Temporary directory: ${TEMPDIR}
 trap "echo Deleting: ${TEMPDIR}; rm -rf ${TEMPDIR}" 0
 
+# Extract user and group info from container and (mayby) append the slurm user
 singularity exec ${IMAGE} cp -p /etc/passwd ${TEMPDIR}/etc_passwd
 singularity exec ${IMAGE} cp -p /etc/group ${TEMPDIR}/etc_group
-cat /etc/passwd | grep slurm >> ${TEMPDIR}/etc_passwd
-cat /etc/group | grep slurm >> ${TEMPDIR}/etc_group
+grep slurm /etc/passwd >> ${TEMPDIR}/etc_passwd
+grep slurm /etc/group >> ${TEMPDIR}/etc_group
 
-#getent passwd >> ${TEMPDIR}/etc_passwd
-#getent group >> ${TEMPDIR}/etc_group
+# Note that if system users are not managed in /etc/..., we could use getent:
+# getent passwd | grep slurm >> ${TEMPDIR}/etc_passwd
+# getent group | grep slurm >> ${TEMPDIR}/etc_group
 
+# Create bind paths
 RTEMPDIR=$(basename $TEMPDIR) # get relative temp dir path
 
 MERGED_PASSWD_GROUP="\
