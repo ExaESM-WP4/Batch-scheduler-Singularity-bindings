@@ -1,4 +1,4 @@
-# SLURM-Singularity-bindings
+# Batch scheduler Singularity bindings
 
 Wrapper scripts that enable host-system batch scheduler commands inside the container.
 Should be working especially with Red Hat (e.g. CentOS, ...) and Debian (e.g. Ubuntu, ...) Linux flavours.
