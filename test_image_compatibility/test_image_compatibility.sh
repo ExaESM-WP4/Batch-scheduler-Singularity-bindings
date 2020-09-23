@@ -25,3 +25,13 @@ bash -c '{ SINGULARITYENV_USER=$USER ./bind_scheduler.sh singularity exec --clea
 echo -----------------------------------------------; }' \
 > ${MACHINE}.log 2>&1
 
+# Append host system information.
+
+cat /etc/*release >> ${MACHINE}.log
+echo ----------------------------------------------- >> ${MACHINE}.log
+uname -a >> ${MACHINE}.log
+
+# Hide paths.
+
+sed "s#$(pwd)#<path-to-repo>/test_image_compatibility#" --in-place ${MACHINE}.log
+
