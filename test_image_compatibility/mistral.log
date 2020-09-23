@@ -1,0 +1,233 @@
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv amazonlinux_1.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: amazonlinux_1.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.h2tmYYnp
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.h2tmYYnp/etc_passwd:/etc/passwd,tmp.h2tmYYnp/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (77) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (185) bind mounts
+WARNING: underlay of /usr/lib64/slurm required more than 50 (98) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855374    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.h2tmYYnp
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv amazonlinux_2.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: amazonlinux_2.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.C4NWBYgX
+FATAL: kernel too old
+FATAL: kernel too old
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.C4NWBYgX/etc_passwd:/etc/passwd,tmp.C4NWBYgX/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (82) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (221) bind mounts
+WARNING: underlay of /usr/lib64/slurm required more than 50 (142) bind mounts
+FATAL: kernel too old
+Deleting: <path-to-repo>/test_image_compatibility/tmp.C4NWBYgX
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv centos_6.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.0iDx0C2o
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.0iDx0C2o/etc_passwd:/etc/passwd,tmp.0iDx0C2o/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (94) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (252) bind mounts
+WARNING: underlay of /usr/lib64/slurm required more than 50 (90) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855376    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.0iDx0C2o
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv centos_7.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.G3GeaEGS
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.G3GeaEGS/etc_passwd:/etc/passwd,tmp.G3GeaEGS/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (103) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (419) bind mounts
+WARNING: underlay of /usr/lib64/slurm required more than 50 (187) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855377    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.G3GeaEGS
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv centos_8.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.4EB5GTlq
+FATAL: kernel too old
+FATAL: kernel too old
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.4EB5GTlq/etc_passwd:/etc/passwd,tmp.4EB5GTlq/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (109) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (387) bind mounts
+WARNING: underlay of /usr/lib64/slurm required more than 50 (190) bind mounts
+FATAL: kernel too old
+Deleting: <path-to-repo>/test_image_compatibility/tmp.4EB5GTlq
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv debian_6.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.OFpQcyJg
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.OFpQcyJg/etc_passwd:/etc/passwd,tmp.OFpQcyJg/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (71) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (188) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855381    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.OFpQcyJg
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv debian_7.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.HoBCtRjD
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.HoBCtRjD/etc_passwd:/etc/passwd,tmp.HoBCtRjD/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (72) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (189) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855385    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.HoBCtRjD
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv debian_8.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.WKuaHOzx
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.WKuaHOzx/etc_passwd:/etc/passwd,tmp.WKuaHOzx/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (87) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (215) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855386    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.WKuaHOzx
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv debian_9.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_9.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.ZJYnB0DU
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.ZJYnB0DU/etc_passwd:/etc/passwd,tmp.ZJYnB0DU/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (67) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (190) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855388    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.ZJYnB0DU
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv debian_10.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_10.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.OqOdnS4A
+FATAL: kernel too old
+FATAL: kernel too old
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.OqOdnS4A/etc_passwd:/etc/passwd,tmp.OqOdnS4A/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (66) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (189) bind mounts
+FATAL: kernel too old
+Deleting: <path-to-repo>/test_image_compatibility/tmp.OqOdnS4A
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv ubuntu_10.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_10.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LOs1cIEh
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.LOs1cIEh/etc_passwd:/etc/passwd,tmp.LOs1cIEh/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (103) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (244) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855390    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.LOs1cIEh
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv ubuntu_12.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_12.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LWV1imBz
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.LWV1imBz/etc_passwd:/etc/passwd,tmp.LWV1imBz/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (84) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (204) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855391    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.LWV1imBz
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv ubuntu_14.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_14.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.73HSpBvs
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.73HSpBvs/etc_passwd:/etc/passwd,tmp.73HSpBvs/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (126) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (302) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855395    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.73HSpBvs
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv ubuntu_16.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_16.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.QFCKazpd
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.QFCKazpd/etc_passwd:/etc/passwd,tmp.QFCKazpd/etc_group:/etc/group
+WARNING: underlay of /etc/slurm required more than 50 (82) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (215) bind mounts
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          23855399    shared test_job  b350097 PD       0:00      1 (None)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.QFCKazpd
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv ubuntu_18.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_18.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LERnBjqm
+WARNING: underlay of /etc/localtime required more than 50 (65) bind mounts
+FATAL: kernel too old
+WARNING: underlay of /etc/localtime required more than 50 (65) bind mounts
+FATAL: kernel too old
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.LERnBjqm/etc_passwd:/etc/passwd,tmp.LERnBjqm/etc_group:/etc/group
+WARNING: underlay of /etc/localtime required more than 50 (65) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (198) bind mounts
+FATAL: kernel too old
+Deleting: <path-to-repo>/test_image_compatibility/tmp.LERnBjqm
+-----------------------------------------------
+Will use: ../mistral.conf
+singularity version 3.6.1
+Will execute: singularity exec --cleanenv ubuntu_20.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_20.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.aZwVypKD
+WARNING: underlay of /etc/localtime required more than 50 (66) bind mounts
+FATAL: kernel too old
+WARNING: underlay of /etc/localtime required more than 50 (66) bind mounts
+FATAL: kernel too old
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,tmp.aZwVypKD/etc_passwd:/etc/passwd,tmp.aZwVypKD/etc_group:/etc/group
+WARNING: underlay of /etc/localtime required more than 50 (66) bind mounts
+WARNING: underlay of /usr/bin/sinfo required more than 50 (275) bind mounts
+FATAL: kernel too old
+Deleting: <path-to-repo>/test_image_compatibility/tmp.aZwVypKD
+-----------------------------------------------
+LSB_VERSION=base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
+Red Hat Enterprise Linux Server release 6.10 (Santiago)
+Red Hat Enterprise Linux Server release 6.10 (Santiago)
+-----------------------------------------------
+Linux mlogin108 2.6.32-754.29.2.el6.x86_64 #1 SMP Thu May 7 06:14:05 EDT 2020 x86_64 x86_64 x86_64 GNU/Linux
