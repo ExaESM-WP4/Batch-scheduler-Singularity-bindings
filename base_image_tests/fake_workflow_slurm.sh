@@ -1,5 +1,6 @@
 #!/bin/bash
 
-function sleep_then_kill { sleep 3; squeue -u $USER; scancel "$1"; squeue -u $USER; }
+sinfo 1> /dev/null && echo successful call: sinfo || echo failed to call: sinfo
+function sleep_then_kill { squeue -u $USER; scancel "$1"; sleep 5; squeue -u $USER; }
 sleep_then_kill $( sbatch test_job_slurm.sh | awk '{print $4}' )
 
