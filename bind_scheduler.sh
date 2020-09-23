@@ -2,26 +2,23 @@
 
 # Get system-specific bindings to use here.
 CONFIG=scheduler-bindings.conf
-source ${CONFIG} || { echo ${CONFIG} not found. Make sure to correctly link or create it!; exit; }
+source ${CONFIG} || { echo ${CONFIG} not found. Make sure to correctly link or create it: "ln -sf <machine>.conf scheduler-bindings.conf"; exit; }
 echo Will use: $(readlink scheduler-bindings.conf)
 
 # Check if Singularity is available.
 singularity --version || { echo Singularity not found... exiting.; exit; }
 
 # Get Singularity image path.
-# We'll preserve the original command here and parse all inputs until we find an image file.
-# Note, the $@ variable is empty after this section.
+# https://stackoverflow.com/a/25535717
 
-ORIGINAL_SINGULARITY_COMMAND="$@"
+ORIGINAL_SINGULARITY_COMMAND="$@" # Optional.
 echo Will execute: ${ORIGINAL_SINGULARITY_COMMAND}
 
-while [[ "$#" -gt 0 ]]; do
-  case $1 in
-    *.sif) IMAGE="$1" ;;
-    *) ;;
-  esac
-  shift
+for SINGULARITY_ARG in "$@"; do
+ case $SINGULARITY_ARG in *.sif) IMAGE="$SINGULARITY_ARG";; esac
 done
+
+if [[ -z "$IMAGE" ]]; then echo "No *.sif image location found. Exiting..."; exit; fi
 
 echo Enable host SLURM user for: ${IMAGE}
 
