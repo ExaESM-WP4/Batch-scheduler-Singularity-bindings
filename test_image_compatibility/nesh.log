@@ -1,0 +1,279 @@
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv amazonlinux_1.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: amazonlinux_1.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.AH0Pt04W
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.AH0Pt04W/etc_passwd:/etc/passwd,tmp.AH0Pt04W/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50497.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50497.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.AH0Pt04W
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv amazonlinux_2.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: amazonlinux_2.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.daNdfpve
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.daNdfpve/etc_passwd:/etc/passwd,tmp.daNdfpve/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50501.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50501.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.daNdfpve
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv centos_6.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: centos_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.7d5soTFH
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.7d5soTFH/etc_passwd:/etc/passwd,tmp.7d5soTFH/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+qsub: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by qsub)
+qstat: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
+qdel: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by qdel)
+qstat: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.7d5soTFH
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv centos_7.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: centos_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.E7ZOuoCN
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.E7ZOuoCN/etc_passwd:/etc/passwd,tmp.E7ZOuoCN/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50502.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50502.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.E7ZOuoCN
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv centos_8.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: centos_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.amKhzQ32
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.amKhzQ32/etc_passwd:/etc/passwd,tmp.amKhzQ32/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50504.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50504.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.amKhzQ32
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_6.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: debian_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.jRsOSpZf
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.jRsOSpZf/etc_passwd:/etc/passwd,tmp.jRsOSpZf/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+qsub: /lib/libc.so.6: version `GLIBC_2.12' not found (required by qsub)
+qsub: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qsub)
+qstat: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
+qdel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qdel)
+qstat: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.jRsOSpZf
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_7.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: debian_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.bgGRZbZH
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.bgGRZbZH/etc_passwd:/etc/passwd,tmp.bgGRZbZH/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+qsub: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by qsub)
+qstat: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
+qdel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by qdel)
+qstat: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.bgGRZbZH
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_8.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: debian_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.EC2tLaDg
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.EC2tLaDg/etc_passwd:/etc/passwd,tmp.EC2tLaDg/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50506.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50506.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.EC2tLaDg
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_9.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: debian_9.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LYSDY9qg
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.LYSDY9qg/etc_passwd:/etc/passwd,tmp.LYSDY9qg/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50508.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50508.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.LYSDY9qg
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_10.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: debian_10.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LTgd4Y1X
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.LTgd4Y1X/etc_passwd:/etc/passwd,tmp.LTgd4Y1X/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50509.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50509.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.LTgd4Y1X
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_10.04.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: ubuntu_10.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.pr2ngay9
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.pr2ngay9/etc_passwd:/etc/passwd,tmp.pr2ngay9/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+qsub: /lib/libc.so.6: version `GLIBC_2.12' not found (required by qsub)
+qsub: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qsub)
+qstat: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
+qdel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qdel)
+qstat: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.pr2ngay9
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_12.04.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: ubuntu_12.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LunYND2N
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.LunYND2N/etc_passwd:/etc/passwd,tmp.LunYND2N/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50510.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50510.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.LunYND2N
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_14.04.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: ubuntu_14.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.BgG8tOMM
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.BgG8tOMM/etc_passwd:/etc/passwd,tmp.BgG8tOMM/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50511.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50511.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.BgG8tOMM
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_16.04.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: ubuntu_16.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.l6iTgrPH
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.l6iTgrPH/etc_passwd:/etc/passwd,tmp.l6iTgrPH/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50512.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50512.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.l6iTgrPH
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_18.04.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: ubuntu_18.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.tyUScbik
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.tyUScbik/etc_passwd:/etc/passwd,tmp.tyUScbik/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50515.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50515.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.tyUScbik
+-----------------------------------------------
+Will use: ../nesh.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_20.04.sif ./fake_workflow_nesh.sh
+Enable host SLURM user for: ubuntu_20.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.fXRCIuR3
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
+SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.fXRCIuR3/etc_passwd:/etc/passwd,tmp.fXRCIuR3/etc_group:/etc/group
+[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
+RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
+--------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
+50517.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
+Request 50517.nesh-batch was deleted.
+Deleting: <path-to-repo>/test_image_compatibility/tmp.fXRCIuR3
+-----------------------------------------------
+NAME="Red Hat Enterprise Linux Server"
+VERSION="7.5 (Maipo)"
+ID="rhel"
+ID_LIKE="fedora"
+VARIANT="Server"
+VARIANT_ID="server"
+VERSION_ID="7.5"
+PRETTY_NAME="Red Hat Enterprise Linux"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:7.5:GA:server"
+HOME_URL="https://www.redhat.com/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 7"
+REDHAT_BUGZILLA_PRODUCT_VERSION=7.5
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="7.5"
+Red Hat Enterprise Linux Server release 7.5 (Maipo)
+Red Hat Enterprise Linux Server release 7.5 (Maipo)
+-----------------------------------------------
+Linux nesh-fe1 3.10.0-862.14.4.el7.x86_64 #1 SMP Fri Sep 21 09:07:21 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
