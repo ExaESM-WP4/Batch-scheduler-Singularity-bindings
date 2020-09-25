@@ -30,6 +30,8 @@ echo -----------------------------------------------; }' \
 cat /etc/*release >> ${MACHINE}.log
 echo ----------------------------------------------- >> ${MACHINE}.log
 uname -a >> ${MACHINE}.log
+echo ----------------------------------------------- >> ${MACHINE}.log
+date >> ${MACHINE}.log
 
 # Hide paths.
 
