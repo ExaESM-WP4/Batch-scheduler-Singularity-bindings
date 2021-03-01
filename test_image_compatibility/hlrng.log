@@ -1,0 +1,419 @@
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv amazonlinux_1.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: amazonlinux_1.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.7erNDRcb
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.7erNDRcb/etc_passwd:/etc/passwd,tmp.7erNDRcb/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           2486146  medium40 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.7erNDRcb
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv amazonlinux_2.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: amazonlinux_2.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.Q1GYaYBC
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.Q1GYaYBC/etc_passwd:/etc/passwd,tmp.Q1GYaYBC/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           2486147  medium40 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.Q1GYaYBC
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv centos_6.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.MrpK51D8
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.MrpK51D8/etc_passwd:/etc/passwd,tmp.MrpK51D8/etc_group:/etc/group
+sinfo: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+scancel: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.MrpK51D8
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv centos_7.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.IM56sve4
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.IM56sve4/etc_passwd:/etc/passwd,tmp.IM56sve4/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           2486148  medium40 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.IM56sve4
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv centos_8.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.CgbJFVaF
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.CgbJFVaF/etc_passwd:/etc/passwd,tmp.CgbJFVaF/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           2486149  medium40 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.CgbJFVaF
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv debian_6.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.q77w4k7g
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.q77w4k7g/etc_passwd:/etc/passwd,tmp.q77w4k7g/etc_group:/etc/group
+sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.q77w4k7g
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv debian_7.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.ZgPmHAff
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.ZgPmHAff/etc_passwd:/etc/passwd,tmp.ZgPmHAff/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.ZgPmHAff
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv debian_8.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.jpLEDXaM
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.jpLEDXaM/etc_passwd:/etc/passwd,tmp.jpLEDXaM/etc_group:/etc/group
+sinfo: error: If munged is up, restart with --num-threads=10
+sinfo: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sinfo: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_partitions: Protocol authentication error
+failed to call: sinfo
+sbatch: error: If munged is up, restart with --num-threads=10
+sbatch: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sbatch: error: slurm_send_node_msg: authentication: Invalid authentication credential
+sbatch: error: Batch job submission failed: Protocol authentication error
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+scancel: error: Invalid job id 
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+Deleting: <path-to-repo>/test_image_compatibility/tmp.jpLEDXaM
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv debian_9.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_9.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.RzlSRyHp
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.RzlSRyHp/etc_passwd:/etc/passwd,tmp.RzlSRyHp/etc_group:/etc/group
+sinfo: error: If munged is up, restart with --num-threads=10
+sinfo: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sinfo: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_partitions: Protocol authentication error
+failed to call: sinfo
+sbatch: error: If munged is up, restart with --num-threads=10
+sbatch: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sbatch: error: slurm_send_node_msg: authentication: Invalid authentication credential
+sbatch: error: Batch job submission failed: Protocol authentication error
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+scancel: error: Invalid job id 
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+Deleting: <path-to-repo>/test_image_compatibility/tmp.RzlSRyHp
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv debian_10.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_10.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.nLFj5TvF
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.nLFj5TvF/etc_passwd:/etc/passwd,tmp.nLFj5TvF/etc_group:/etc/group
+sinfo: error: If munged is up, restart with --num-threads=10
+sinfo: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sinfo: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_partitions: Protocol authentication error
+failed to call: sinfo
+sbatch: error: If munged is up, restart with --num-threads=10
+sbatch: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sbatch: error: slurm_send_node_msg: authentication: Invalid authentication credential
+sbatch: error: Batch job submission failed: Protocol authentication error
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+scancel: error: Invalid job id 
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+Deleting: <path-to-repo>/test_image_compatibility/tmp.nLFj5TvF
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv ubuntu_10.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_10.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.FKOsSyZV
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.FKOsSyZV/etc_passwd:/etc/passwd,tmp.FKOsSyZV/etc_group:/etc/group
+sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.FKOsSyZV
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv ubuntu_12.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_12.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.A46f53p4
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.A46f53p4/etc_passwd:/etc/passwd,tmp.A46f53p4/etc_group:/etc/group
+sinfo: error: If munged is up, restart with --num-threads=10
+sinfo: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sinfo: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_partitions: Protocol authentication error
+failed to call: sinfo
+sbatch: error: If munged is up, restart with --num-threads=10
+sbatch: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sbatch: error: slurm_send_node_msg: authentication: Invalid authentication credential
+sbatch: error: Batch job submission failed: Protocol authentication error
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+scancel: error: Invalid job id 
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+Deleting: <path-to-repo>/test_image_compatibility/tmp.A46f53p4
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv ubuntu_14.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_14.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LCXahZbL
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.LCXahZbL/etc_passwd:/etc/passwd,tmp.LCXahZbL/etc_group:/etc/group
+sinfo: error: If munged is up, restart with --num-threads=10
+sinfo: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sinfo: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_partitions: Protocol authentication error
+failed to call: sinfo
+sbatch: error: If munged is up, restart with --num-threads=10
+sbatch: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sbatch: error: slurm_send_node_msg: authentication: Invalid authentication credential
+sbatch: error: Batch job submission failed: Protocol authentication error
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+scancel: error: Invalid job id 
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+Deleting: <path-to-repo>/test_image_compatibility/tmp.LCXahZbL
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv ubuntu_16.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_16.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.NKmhipYD
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.NKmhipYD/etc_passwd:/etc/passwd,tmp.NKmhipYD/etc_group:/etc/group
+sinfo: error: If munged is up, restart with --num-threads=10
+sinfo: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sinfo: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_partitions: Protocol authentication error
+failed to call: sinfo
+sbatch: error: If munged is up, restart with --num-threads=10
+sbatch: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sbatch: error: slurm_send_node_msg: authentication: Invalid authentication credential
+sbatch: error: Batch job submission failed: Protocol authentication error
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+scancel: error: Invalid job id 
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+Deleting: <path-to-repo>/test_image_compatibility/tmp.NKmhipYD
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv ubuntu_18.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_18.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.ivePu775
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.ivePu775/etc_passwd:/etc/passwd,tmp.ivePu775/etc_group:/etc/group
+sinfo: error: If munged is up, restart with --num-threads=10
+sinfo: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sinfo: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_partitions: Protocol authentication error
+failed to call: sinfo
+sbatch: error: If munged is up, restart with --num-threads=10
+sbatch: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sbatch: error: slurm_send_node_msg: authentication: Invalid authentication credential
+sbatch: error: Batch job submission failed: Protocol authentication error
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+scancel: error: Invalid job id 
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+Deleting: <path-to-repo>/test_image_compatibility/tmp.ivePu775
+-----------------------------------------------
+Will use: ../hlrng.conf
+singularity version 3.2.1-1
+Will execute: singularity exec --cleanenv ubuntu_20.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_20.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.k5XS9H4h
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,/var/run/munge/,/cm/shared/batch/spank/jobinfo.so,tmp.k5XS9H4h/etc_passwd:/etc/passwd,tmp.k5XS9H4h/etc_group:/etc/group
+sinfo: error: If munged is up, restart with --num-threads=10
+sinfo: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sinfo: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_partitions: Protocol authentication error
+failed to call: sinfo
+sbatch: error: If munged is up, restart with --num-threads=10
+sbatch: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+sbatch: error: slurm_send_node_msg: authentication: Invalid authentication credential
+sbatch: error: Batch job submission failed: Protocol authentication error
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+scancel: error: Invalid job id 
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+squeue: error: If munged is up, restart with --num-threads=10
+squeue: error: Munge encode failed: Failed to access "/var/run/munge/munge.socket.2": No such file or directory
+squeue: error: slurm_send_node_msg: authentication: Invalid authentication credential
+slurm_load_jobs error: Protocol authentication error
+Deleting: <path-to-repo>/test_image_compatibility/tmp.k5XS9H4h
+-----------------------------------------------
+CentOS Linux release 7.8.2003 (Core)
+Cluster Manager v8.2
+slave
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="7"
+PRETTY_NAME="CentOS Linux 7 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:7"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-7"
+CENTOS_MANTISBT_PROJECT_VERSION="7"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="7"
+
+CentOS Linux release 7.8.2003 (Core)
+CentOS Linux release 7.8.2003 (Core)
+-----------------------------------------------
+Linux glogin2 3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
