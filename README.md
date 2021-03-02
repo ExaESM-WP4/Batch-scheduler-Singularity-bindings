@@ -1,13 +1,17 @@
-# Batch scheduler Singularity bindings
+# Batch scheduler bindings for Singularity containers
 
-Wrapper scripts that enable host-system batch scheduler commands inside the container.
-Should be working especially with Red Hat (e.g. CentOS, ...) and Debian (e.g. Ubuntu, ...) Linux flavours.
-Tested for CentOS (7 and 8), Debian (8, 9 and 10) and Ubuntu (18.04 and 20.04) container images.
-Please note, that for SLURM, currently only `sinfo`, `squeue`, `sbatch` and `scancel` are supported.
+This repository provides a wrapper script that adds HPC system batch scheduler functionality to a Singularity container. It was designed with container portability in mind. It does not require any target-system specific adaption to a container's `Dockerfile` and instead  mounts the required system users, executables, libraries and configuration files into the container's file system at startup (see e.g. the [compatibility tests](./test_image_compatibility) for which only default container base images as provided by Dockerhub were used).
 
-Before being able to use the `bind_scheduler.sh`,  you'll have to enable the configuration for your system. Do this with (e.g for Juwels)
+## Functionality
+
+Please note, for SLURM only `sinfo`, `squeue`, `sbatch` and `scancel` and for PBS only `qsub`, `qstat`, and `qdel` are currently supported.
+
+## Usage instructions
+
+Before you can use the `bind_scheduler.sh` wrapper you have to provide the configuration for your HPC system. This is done by setting up a soft link,
+
 ```shell
-ln -sf juwels.conf scheduler-bindings.conf
+$ ln -sf juwels.conf scheduler-bindings.conf
 ```
 
 ```shell
@@ -25,4 +29,25 @@ exit
 Deleting: <path-to-script>/tmp.CU7R16oG
 ```
 
-The wrapper script above enables Dask jobqueue workflows (see e.g. [here](https://github.com/ExaESM-WP4/dask-jobqueue-configs) for non-container examples and Jobqueue configuration files) from containerized JupyterLab analysis environments (see e.g. [here](https://github.com/martinclaus/py-da-stack) or [there](https://github.com/ExaESM-WP4/Containerized-Jupyter-on-HPC)).
+## Compatibility
+
+The wrapper script mounts system users, executables, shared libraries and configuration files from the HPC systems's batch scheduler into the container's file system. Most operating systems deployed on HPC systems are glibc-based, therefore currently only glibc-based container base images are expected to work (note, e.g., that the popular Alpine images are musl-based and therefore not compatible). To give an overview, for the [most popular Docker container base image](https://hub.docker.com/search?type=image&image_filter=official&category=base) versions a few dedicated [compatibility tests](./test_image_compatibility) have been done.
+
+| HPC system | Singularity | compatible | not compatible |
+| ----------:| ----- | ------------- | ----- | ----- |
+| NESH<br>Redhat 7.5-3.10.0<br>PBS | v3.5.3 | Ubuntu: 12, 14, 16, 18, 20<br>CentOS: 7, 8<br>Debian: 8, 9, 10<br>Amazon Linux: 1, 2<br> | Ubuntu: 10<br>CentOS: 6<br>Debian: 6, 7<br> --- |
+| JUWELS<br>CentOS 7.8-3.10.0<br>SLURM | v3.6.1 | Ubuntu: 12, 14, 16, 18, 20<br>CentOS: 7, 8<br>Debian: 8, 9, 10<br>Amazon Linux: 1, 2 | Ubuntu: 10<br>CentOS: 6<br>Debian: 6, 7<br> --- |
+| HLRN-B<br>Redhat 7.8-3.10.0<br>SLURM | v3.5.3 | Ubuntu: 12, 14, 16, 18, 20<br>CentOS: 7, 8<br>Debian: 8, 9, 10<br>Amazon Linux: 1, 2 | Ubuntu: 10<br>CentOS: 6<br>Debian: 6, 7<br> --- |
+| HLRN-G<br>Redhat 7.8-3.10.0<br>SLURM | v3.2.1 | ---<br>CentOS: 7, 8<br>---<br>Amazon Linux: 1, 2 | Ubuntu: 10, 12, 14, 16, 18, 20<br>CentOS: 6<br>Debian: 6, 7, 8, 9, 10<br>--- |
+| Mistral<br>Redhat 6.10-2.6.32<br>SLURM | v3.6.1 | Ubuntu: 10, 12, 14, 16<br>CentOS: 6, 7<br>Debian: 6, 7, 8, 9<br>Amazon Linux: 1 | Ubuntu: 18, 20<br>CentOS: 8<br>Debian: 10<br>Amazon Linux: 2 |
+
+> Please note, for container's to be compatible with the wrapper script it might also be required that the application's executables and libraries are not installed in one of the file system locations that are specified in the configuration files. Singularity bind mounting takes precedence over the container's original file system contents, which may result in a broken application when a container application is started with the wrapper. It should be noted that, in general, the portability of a container image can be improved considerably by installing target applications not in a default file system location, but in application-specific folders inside e.g. the container's root path (and then explicitly adding these to the `$PATH` environment variable).
+
+## Example use cases
+
+There are a few workflows that make use of an HPC system's batch scheduling functionality,
+
+* Dask jobqueue inside a containerized JupyterLab environment
+* batch job orchestration via e.g. JupyterLab terminals in a containerized Jupyter environment
+* workflow managers like e.g. Nextflow
+* ...
