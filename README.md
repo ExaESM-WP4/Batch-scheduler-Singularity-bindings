@@ -21,22 +21,27 @@ Please note, for SLURM only `sinfo`, `squeue`, `sbatch` and `scancel` are curren
 Before you can use the `bind_scheduler.sh` wrapper you have to provide the configuration for your HPC system. This is done by setting up a soft link,
 
 ```shell
+$ git clone https://github.com/ExaESM-WP4/Batch-scheduler-Singularity-bindings.git
+$ cd Batch-scheduler-Singularity-bindings
 $ ln -sf nesh.conf scheduler-bindings.conf
 ```
+
+Example output,
 
 ```shell
 $ singularity pull docker://centos:8
 $ ./bind_scheduler.sh singularity shell --cleanenv centos_8.sif
-Will use: juwels.conf
-singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will use: nesh.conf
+linux kernel 4.18.0-193.el8.x86_64
+slurm 20.02.4-1aurora
+singularity version 3.5.2
 Will execute: singularity shell --cleanenv centos_8.sif
 Enable host SLURM user for: centos_8.sif
-Temporary directory: <path-to-script>/tmp.CU7R16oG
-SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.CU7R16oG/etc_passwd:/etc/passwd,tmp.CU7R16oG/etc_group:/etc/group
+Temporary directory: .../Batch-scheduler-Singularity-bindings/tmp.d0ma2UHL
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.d0ma2UHL/etc_passwd:/etc/passwd,tmp.d0ma2UHL/etc_group:/etc/group
 Singularity> exit
 exit
-Deleting: <path-to-script>/tmp.CU7R16oG
+Deleting: .../Batch-scheduler-Singularity-bindings/tmp.d0ma2UHL
 ```
 
 ## Compatibility
