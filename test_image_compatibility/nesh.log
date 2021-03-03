@@ -1,279 +1,299 @@
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv amazonlinux_1.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv amazonlinux_1.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: amazonlinux_1.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.AH0Pt04W
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.AH0Pt04W/etc_passwd:/etc/passwd,tmp.AH0Pt04W/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50497.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50497.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.AH0Pt04W
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.MxAa8LLj
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.MxAa8LLj/etc_passwd:/etc/passwd,tmp.MxAa8LLj/etc_group:/etc/group
+sinfo: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.MxAa8LLj
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv amazonlinux_2.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv amazonlinux_2.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: amazonlinux_2.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.daNdfpve
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.daNdfpve/etc_passwd:/etc/passwd,tmp.daNdfpve/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50501.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50501.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.daNdfpve
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.NAbgCZIo
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.NAbgCZIo/etc_passwd:/etc/passwd,tmp.NAbgCZIo/etc_group:/etc/group
+sinfo: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.NAbgCZIo
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv centos_6.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv centos_6.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: centos_6.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.7d5soTFH
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.7d5soTFH/etc_passwd:/etc/passwd,tmp.7d5soTFH/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-qsub: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by qsub)
-qstat: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
-qdel: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by qdel)
-qstat: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
-Deleting: <path-to-repo>/test_image_compatibility/tmp.7d5soTFH
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.WAEItiPn
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.WAEItiPn/etc_passwd:/etc/passwd,tmp.WAEItiPn/etc_group:/etc/group
+sinfo: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+sinfo: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+sbatch: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.WAEItiPn
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv centos_7.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv centos_7.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: centos_7.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.E7ZOuoCN
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.E7ZOuoCN/etc_passwd:/etc/passwd,tmp.E7ZOuoCN/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50502.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50502.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.E7ZOuoCN
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.TosxnjeQ
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.TosxnjeQ/etc_passwd:/etc/passwd,tmp.TosxnjeQ/etc_group:/etc/group
+sinfo: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.TosxnjeQ
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv centos_8.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv centos_8.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: centos_8.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.amKhzQ32
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.amKhzQ32/etc_passwd:/etc/passwd,tmp.amKhzQ32/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50504.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50504.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.amKhzQ32
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.kEIz9j3C
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.kEIz9j3C/etc_passwd:/etc/passwd,tmp.kEIz9j3C/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+            444634   cluster test_job smomw260 PD       0:00      1 (None) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <local-repository-path>/test_image_compatibility/tmp.kEIz9j3C
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv debian_6.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv debian_6.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_6.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.jRsOSpZf
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.jRsOSpZf/etc_passwd:/etc/passwd,tmp.jRsOSpZf/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-qsub: /lib/libc.so.6: version `GLIBC_2.12' not found (required by qsub)
-qsub: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qsub)
-qstat: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
-qdel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qdel)
-qstat: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
-Deleting: <path-to-repo>/test_image_compatibility/tmp.jRsOSpZf
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.3r8f49O4
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.3r8f49O4/etc_passwd:/etc/passwd,tmp.3r8f49O4/etc_group:/etc/group
+sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+sinfo: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+sbatch: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.3r8f49O4
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv debian_7.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv debian_7.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_7.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.bgGRZbZH
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.bgGRZbZH/etc_passwd:/etc/passwd,tmp.bgGRZbZH/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-qsub: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by qsub)
-qstat: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
-qdel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by qdel)
-qstat: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
-Deleting: <path-to-repo>/test_image_compatibility/tmp.bgGRZbZH
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.trQjZcaM
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.trQjZcaM/etc_passwd:/etc/passwd,tmp.trQjZcaM/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.trQjZcaM
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv debian_8.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv debian_8.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_8.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.EC2tLaDg
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.EC2tLaDg/etc_passwd:/etc/passwd,tmp.EC2tLaDg/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50506.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50506.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.EC2tLaDg
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.XvAc7GIH
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.XvAc7GIH/etc_passwd:/etc/passwd,tmp.XvAc7GIH/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.XvAc7GIH
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv debian_9.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv debian_9.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_9.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LYSDY9qg
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.LYSDY9qg/etc_passwd:/etc/passwd,tmp.LYSDY9qg/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50508.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50508.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.LYSDY9qg
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.GEsLvHFQ
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.GEsLvHFQ/etc_passwd:/etc/passwd,tmp.GEsLvHFQ/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.GEsLvHFQ
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv debian_10.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv debian_10.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_10.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LTgd4Y1X
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.LTgd4Y1X/etc_passwd:/etc/passwd,tmp.LTgd4Y1X/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50509.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50509.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.LTgd4Y1X
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.fLKKxpsy
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.fLKKxpsy/etc_passwd:/etc/passwd,tmp.fLKKxpsy/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+            444635   cluster test_job smomw260 PD       0:00      1 (None) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <local-repository-path>/test_image_compatibility/tmp.fLKKxpsy
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv ubuntu_10.04.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv ubuntu_10.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_10.04.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.pr2ngay9
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.pr2ngay9/etc_passwd:/etc/passwd,tmp.pr2ngay9/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-qsub: /lib/libc.so.6: version `GLIBC_2.12' not found (required by qsub)
-qsub: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qsub)
-qstat: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
-qdel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qdel)
-qstat: /lib/libc.so.6: version `GLIBC_2.14' not found (required by qstat)
-Deleting: <path-to-repo>/test_image_compatibility/tmp.pr2ngay9
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.cXVoVyfs
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.cXVoVyfs/etc_passwd:/etc/passwd,tmp.cXVoVyfs/etc_group:/etc/group
+sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+sinfo: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+sbatch: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.cXVoVyfs
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv ubuntu_12.04.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv ubuntu_12.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_12.04.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LunYND2N
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.LunYND2N/etc_passwd:/etc/passwd,tmp.LunYND2N/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50510.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50510.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.LunYND2N
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.eWyjvYtX
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.eWyjvYtX/etc_passwd:/etc/passwd,tmp.eWyjvYtX/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.eWyjvYtX
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv ubuntu_14.04.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv ubuntu_14.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_14.04.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.BgG8tOMM
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.BgG8tOMM/etc_passwd:/etc/passwd,tmp.BgG8tOMM/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50511.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50511.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.BgG8tOMM
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.XDXjfPYf
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.XDXjfPYf/etc_passwd:/etc/passwd,tmp.XDXjfPYf/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.XDXjfPYf
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv ubuntu_16.04.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv ubuntu_16.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_16.04.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.l6iTgrPH
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.l6iTgrPH/etc_passwd:/etc/passwd,tmp.l6iTgrPH/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50512.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50512.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.l6iTgrPH
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.ksv1I9UE
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.ksv1I9UE/etc_passwd:/etc/passwd,tmp.ksv1I9UE/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <local-repository-path>/test_image_compatibility/tmp.ksv1I9UE
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv ubuntu_18.04.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv ubuntu_18.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_18.04.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.tyUScbik
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.tyUScbik/etc_passwd:/etc/passwd,tmp.tyUScbik/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50515.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50515.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.tyUScbik
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.OqQhfbQi
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.OqQhfbQi/etc_passwd:/etc/passwd,tmp.OqQhfbQi/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+            444636   cluster test_job smomw260 PD       0:00      1 (None) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <local-repository-path>/test_image_compatibility/tmp.OqQhfbQi
 -----------------------------------------------
 Will use: ../nesh.conf
-singularity version 3.5.3
-Will execute: singularity exec --cleanenv ubuntu_20.04.sif ./fake_workflow_nesh.sh
+singularity version 3.5.2
+Will execute: singularity exec --cleanenv ubuntu_20.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_20.04.sif
-Temporary directory: <path-to-repo>/test_image_compatibility/tmp.fXRCIuR3
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-SINGULARITYENV_PREPEND_PATH: /opt/nec/nqsv/bin
-SINGULARITY_BIND: /opt/nec/nqsv/bin/qsub,/opt/nec/nqsv/bin/qstat,/opt/nec/nqsv/bin/qdel,/etc/opt/nec/nqsv/api_client.conf,tmp.fXRCIuR3/etc_passwd:/etc/passwd,tmp.fXRCIuR3/etc_group:/etc/group
-[33mWARNING:[0m Bind mount '/sfs/fs6/home-geomar/smomw260 => /sfs/fs6/home-geomar/smomw260' overlaps container CWD <path-to-repo>/test_image_compatibility, may not be available
-RequestID       ReqName  UserName Queue     Pri STT S   Memory      CPU   Elapse R H M Jobs
---------------- -------- -------- -------- ---- --- - -------- -------- -------- - - - ----
-50517.nesh-batc test_job smomw260 clmedium    0 QUE -    0.00B     0.00        0 Y Y Y    1 
-Request 50517.nesh-batch was deleted.
-Deleting: <path-to-repo>/test_image_compatibility/tmp.fXRCIuR3
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.3dwoVo6t
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.3dwoVo6t/etc_passwd:/etc/passwd,tmp.3dwoVo6t/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+            444637   cluster test_job smomw260 PD       0:00      1 (None) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <local-repository-path>/test_image_compatibility/tmp.3dwoVo6t
 -----------------------------------------------
-NAME="Red Hat Enterprise Linux Server"
-VERSION="7.5 (Maipo)"
+Wed Mar  3 16:05:31 CET 2021
+-----------------------------------------------
+NAME="Red Hat Enterprise Linux"
+VERSION="8.2 (Ootpa)"
 ID="rhel"
 ID_LIKE="fedora"
-VARIANT="Server"
-VARIANT_ID="server"
-VERSION_ID="7.5"
-PRETTY_NAME="Red Hat Enterprise Linux"
+VERSION_ID="8.2"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.2 (Ootpa)"
 ANSI_COLOR="0;31"
-CPE_NAME="cpe:/o:redhat:enterprise_linux:7.5:GA:server"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8.2:GA"
 HOME_URL="https://www.redhat.com/"
 BUG_REPORT_URL="https://bugzilla.redhat.com/"
 
-REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 7"
-REDHAT_BUGZILLA_PRODUCT_VERSION=7.5
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.2
 REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
-REDHAT_SUPPORT_PRODUCT_VERSION="7.5"
-Red Hat Enterprise Linux Server release 7.5 (Maipo)
-Red Hat Enterprise Linux Server release 7.5 (Maipo)
+REDHAT_SUPPORT_PRODUCT_VERSION="8.2"
+Red Hat Enterprise Linux release 8.2 (Ootpa)
+Red Hat Enterprise Linux release 8.2 (Ootpa)
 -----------------------------------------------
-Linux nesh-fe1 3.10.0-862.14.4.el7.x86_64 #1 SMP Fri Sep 21 09:07:21 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Linux nesh-fe1 4.18.0-193.el8.x86_64 #1 SMP Fri Mar 27 14:35:58 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+-----------------------------------------------
+slurm 20.02.4-1aurora
+-----------------------------------------------
+singularity version 3.5.2
+-----------------------------------------------
+amazonlinux_1.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:44:32_UTC
+amazonlinux_2.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:44:56_UTC
+centos_6.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:41:34_UTC
+centos_7.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:42:1_UTC
+centos_8.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:42:28_UTC
+debian_10.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:44:9_UTC
+debian_6.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:42:49_UTC
+debian_7.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:43:8_UTC
+debian_8.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:43:28_UTC
+debian_9.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:43:49_UTC
+ubuntu_10.04.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:39:20_UTC
+ubuntu_12.04.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:39:44_UTC
+ubuntu_14.04.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:40:11_UTC
+ubuntu_16.04.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:40:35_UTC
+ubuntu_18.04.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:40:53_UTC
+ubuntu_20.04.sif
+org.label-schema.build-date: Wednesday_3_March_2021_11:41:11_UTC
