@@ -2,36 +2,36 @@ Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv amazonlinux_1.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: amazonlinux_1.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.MxAa8LLj
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.MxAa8LLj/etc_passwd:/etc/passwd,tmp.MxAa8LLj/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.jOL0OS3Y
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.jOL0OS3Y/etc_passwd:/etc/passwd,tmp.jOL0OS3Y/etc_group:/etc/group
 sinfo: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
 sbatch: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 scancel: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.MxAa8LLj
+Deleting: <local-repository-path>/test_image_compatibility/tmp.jOL0OS3Y
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv amazonlinux_2.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: amazonlinux_2.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.NAbgCZIo
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.NAbgCZIo/etc_passwd:/etc/passwd,tmp.NAbgCZIo/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.IM6hcKQq
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.IM6hcKQq/etc_passwd:/etc/passwd,tmp.IM6hcKQq/etc_group:/etc/group
 sinfo: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
 sbatch: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 scancel: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.NAbgCZIo
+Deleting: <local-repository-path>/test_image_compatibility/tmp.IM6hcKQq
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv centos_6.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: centos_6.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.WAEItiPn
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.WAEItiPn/etc_passwd:/etc/passwd,tmp.WAEItiPn/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.Bolxjp0T
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.Bolxjp0T/etc_passwd:/etc/passwd,tmp.Bolxjp0T/etc_group:/etc/group
 sinfo: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
 sinfo: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
@@ -44,40 +44,40 @@ scancel: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib6
 scancel: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.WAEItiPn
+Deleting: <local-repository-path>/test_image_compatibility/tmp.Bolxjp0T
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv centos_7.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: centos_7.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.TosxnjeQ
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.TosxnjeQ/etc_passwd:/etc/passwd,tmp.TosxnjeQ/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.pbniPrqM
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.pbniPrqM/etc_passwd:/etc/passwd,tmp.pbniPrqM/etc_group:/etc/group
 sinfo: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
 sbatch: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 scancel: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib64/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.TosxnjeQ
+Deleting: <local-repository-path>/test_image_compatibility/tmp.pbniPrqM
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv centos_8.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: centos_8.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.kEIz9j3C
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.kEIz9j3C/etc_passwd:/etc/passwd,tmp.kEIz9j3C/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.hM46oc3h
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.hM46oc3h/etc_passwd:/etc/passwd,tmp.hM46oc3h/etc_group:/etc/group
 successful call: sinfo
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-            444634   cluster test_job smomw260 PD       0:00      1 (None) 
+            444690   cluster test_job smomw260 PD       0:00      1 (None) 
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-Deleting: <local-repository-path>/test_image_compatibility/tmp.kEIz9j3C
+Deleting: <local-repository-path>/test_image_compatibility/tmp.hM46oc3h
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv debian_6.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_6.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.3r8f49O4
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.3r8f49O4/etc_passwd:/etc/passwd,tmp.3r8f49O4/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.cutcudNx
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.cutcudNx/etc_passwd:/etc/passwd,tmp.cutcudNx/etc_group:/etc/group
 sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
 sinfo: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
@@ -90,14 +90,14 @@ scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/
 scancel: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.3r8f49O4
+Deleting: <local-repository-path>/test_image_compatibility/tmp.cutcudNx
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv debian_7.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_7.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.trQjZcaM
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.trQjZcaM/etc_passwd:/etc/passwd,tmp.trQjZcaM/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.odiqK4AI
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.odiqK4AI/etc_passwd:/etc/passwd,tmp.odiqK4AI/etc_group:/etc/group
 sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
 sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
@@ -110,54 +110,54 @@ scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (requir
 scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.trQjZcaM
+Deleting: <local-repository-path>/test_image_compatibility/tmp.odiqK4AI
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv debian_8.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_8.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.XvAc7GIH
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.XvAc7GIH/etc_passwd:/etc/passwd,tmp.XvAc7GIH/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.Y6BPbGp5
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.Y6BPbGp5/etc_passwd:/etc/passwd,tmp.Y6BPbGp5/etc_group:/etc/group
 sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
 sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.XvAc7GIH
+Deleting: <local-repository-path>/test_image_compatibility/tmp.Y6BPbGp5
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv debian_9.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_9.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.GEsLvHFQ
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.GEsLvHFQ/etc_passwd:/etc/passwd,tmp.GEsLvHFQ/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.1mzUSAC2
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.1mzUSAC2/etc_passwd:/etc/passwd,tmp.1mzUSAC2/etc_group:/etc/group
 sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
 sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.GEsLvHFQ
+Deleting: <local-repository-path>/test_image_compatibility/tmp.1mzUSAC2
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv debian_10.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: debian_10.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.fLKKxpsy
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.fLKKxpsy/etc_passwd:/etc/passwd,tmp.fLKKxpsy/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.3x8AR2l8
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.3x8AR2l8/etc_passwd:/etc/passwd,tmp.3x8AR2l8/etc_group:/etc/group
 successful call: sinfo
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-            444635   cluster test_job smomw260 PD       0:00      1 (None) 
+            444691   cluster test_job smomw260 PD       0:00      1 (None) 
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-Deleting: <local-repository-path>/test_image_compatibility/tmp.fLKKxpsy
+Deleting: <local-repository-path>/test_image_compatibility/tmp.3x8AR2l8
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv ubuntu_10.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_10.04.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.cXVoVyfs
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.cXVoVyfs/etc_passwd:/etc/passwd,tmp.cXVoVyfs/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.UJnL2rDz
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.UJnL2rDz/etc_passwd:/etc/passwd,tmp.UJnL2rDz/etc_group:/etc/group
 sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
 sinfo: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
@@ -170,75 +170,75 @@ scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/
 scancel: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.cXVoVyfs
+Deleting: <local-repository-path>/test_image_compatibility/tmp.UJnL2rDz
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv ubuntu_12.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_12.04.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.eWyjvYtX
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.eWyjvYtX/etc_passwd:/etc/passwd,tmp.eWyjvYtX/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.oxTfKByt
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.oxTfKByt/etc_passwd:/etc/passwd,tmp.oxTfKByt/etc_group:/etc/group
 sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
 sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.eWyjvYtX
+Deleting: <local-repository-path>/test_image_compatibility/tmp.oxTfKByt
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv ubuntu_14.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_14.04.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.XDXjfPYf
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.XDXjfPYf/etc_passwd:/etc/passwd,tmp.XDXjfPYf/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.uQFBlAXE
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.uQFBlAXE/etc_passwd:/etc/passwd,tmp.uQFBlAXE/etc_group:/etc/group
 sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
 sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.XDXjfPYf
+Deleting: <local-repository-path>/test_image_compatibility/tmp.uQFBlAXE
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv ubuntu_16.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_16.04.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.ksv1I9UE
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.ksv1I9UE/etc_passwd:/etc/passwd,tmp.ksv1I9UE/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.IXr80DcX
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.IXr80DcX/etc_passwd:/etc/passwd,tmp.IXr80DcX/etc_group:/etc/group
 sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 failed to call: sinfo
 sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
 squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.27' not found (required by /usr/lib64/slurm/libslurmfull.so)
-Deleting: <local-repository-path>/test_image_compatibility/tmp.ksv1I9UE
+Deleting: <local-repository-path>/test_image_compatibility/tmp.IXr80DcX
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv ubuntu_18.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_18.04.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.OqQhfbQi
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.OqQhfbQi/etc_passwd:/etc/passwd,tmp.OqQhfbQi/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.hyV9MGpu
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.hyV9MGpu/etc_passwd:/etc/passwd,tmp.hyV9MGpu/etc_group:/etc/group
 successful call: sinfo
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-            444636   cluster test_job smomw260 PD       0:00      1 (None) 
+            444710   cluster test_job smomw260 PD       0:00      1 (None) 
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-Deleting: <local-repository-path>/test_image_compatibility/tmp.OqQhfbQi
+Deleting: <local-repository-path>/test_image_compatibility/tmp.hyV9MGpu
 -----------------------------------------------
 Will use: ../nesh.conf
 singularity version 3.5.2
 Will execute: singularity exec --cleanenv ubuntu_20.04.sif ./fake_workflow_slurm.sh
 Enable host SLURM user for: ubuntu_20.04.sif
-Temporary directory: <local-repository-path>/test_image_compatibility/tmp.3dwoVo6t
-SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.3dwoVo6t/etc_passwd:/etc/passwd,tmp.3dwoVo6t/etc_group:/etc/group
+Temporary directory: <local-repository-path>/test_image_compatibility/tmp.AGWzFLUx
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.AGWzFLUx/etc_passwd:/etc/passwd,tmp.AGWzFLUx/etc_group:/etc/group
 successful call: sinfo
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-            444637   cluster test_job smomw260 PD       0:00      1 (None) 
+            444711   cluster test_job smomw260 PD       0:00      1 (None) 
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
-Deleting: <local-repository-path>/test_image_compatibility/tmp.3dwoVo6t
+Deleting: <local-repository-path>/test_image_compatibility/tmp.AGWzFLUx
 -----------------------------------------------
-Wed Mar  3 16:05:31 CET 2021
+Wed Mar  3 16:18:11 CET 2021
 -----------------------------------------------
 NAME="Red Hat Enterprise Linux"
 VERSION="8.2 (Ootpa)"
@@ -266,34 +266,114 @@ slurm 20.02.4-1aurora
 singularity version 3.5.2
 -----------------------------------------------
 amazonlinux_1.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:44:32_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: amazonlinux:1
+org.label-schema.usage.singularity.version: 3.7.1
 amazonlinux_2.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:44:56_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: amazonlinux:2
+org.label-schema.usage.singularity.version: 3.7.1
 centos_6.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:41:34_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: centos:6
+org.label-schema.usage.singularity.version: 3.7.1
 centos_7.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:42:1_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: centos:7
+org.label-schema.usage.singularity.version: 3.7.1
 centos_8.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:42:28_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: centos:8
+org.label-schema.usage.singularity.version: 3.7.1
 debian_10.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:44:9_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: debian:10
+org.label-schema.usage.singularity.version: 3.7.1
 debian_6.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:42:49_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: debian:6
+org.label-schema.usage.singularity.version: 3.7.1
 debian_7.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:43:8_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: debian:7
+org.label-schema.usage.singularity.version: 3.7.1
 debian_8.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:43:28_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: debian:8
+org.label-schema.usage.singularity.version: 3.7.1
 debian_9.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:43:49_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: debian:9
+org.label-schema.usage.singularity.version: 3.7.1
 ubuntu_10.04.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:39:20_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: ubuntu:10.04
+org.label-schema.usage.singularity.version: 3.7.1
 ubuntu_12.04.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:39:44_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: ubuntu:12.04
+org.label-schema.usage.singularity.version: 3.7.1
 ubuntu_14.04.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:40:11_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: ubuntu:14.04
+org.label-schema.usage.singularity.version: 3.7.1
 ubuntu_16.04.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:40:35_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: ubuntu:16.04
+org.label-schema.usage.singularity.version: 3.7.1
 ubuntu_18.04.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:40:53_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: ubuntu:18.04
+org.label-schema.usage.singularity.version: 3.7.1
 ubuntu_20.04.sif
+org.label-schema.build-arch: amd64
 org.label-schema.build-date: Wednesday_3_March_2021_11:41:11_UTC
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: ubuntu:20.04
+org.label-schema.usage.singularity.version: 3.7.1

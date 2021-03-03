@@ -21,7 +21,7 @@ sbatch --version >> ${MACHINE}.log
 echo ----------------------------------------------- >> ${MACHINE}.log
 singularity --version >> ${MACHINE}.log
 echo ----------------------------------------------- >> ${MACHINE}.log
-ls *.sif | xargs -I {} bash -c 'echo {}; singularity inspect {} | grep build-date' >> ${MACHINE}.log
+ls *.sif | xargs -I {} bash -c 'echo {}; singularity inspect {}' >> ${MACHINE}.log
 
 # Hide machine paths in log file.
 
