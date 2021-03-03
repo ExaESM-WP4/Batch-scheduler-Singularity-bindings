@@ -1,9 +1,13 @@
 #!/bin/bash
 
-# Get system-specific bindings to use here.
+# Get system-specific bindings to use.
 CONFIG=scheduler-bindings.conf
 source ${CONFIG} || { echo ${CONFIG} not found. Make sure to correctly link or create it: "ln -sf <machine>.conf scheduler-bindings.conf"; exit; }
 echo Will use: $(readlink scheduler-bindings.conf)
+
+# Print host system information relevant for debugging.
+echo linux kernel $(uname --kernel-release) || {}
+sinfo --version || {}
 
 # Check if Singularity is available.
 singularity --version || { echo Singularity not found... exiting.; exit; }
@@ -22,14 +26,14 @@ if [[ -z "$IMAGE" ]]; then echo "No *.sif image location found. Exiting..."; exi
 
 echo Enable host SLURM user for: ${IMAGE}
 
-# Prepare binding of system-specific SLURM user.
+# Prepare binding of the system-specific SLURM user.
 #
 # We'll filter the host system users and if there is a SLURM user, we'll add it to the
 # /etc/passwd and /etc/group files used in the container.
 # 
-# This is done very similar to how Singularity iself enables the calling user inside the container:
-# First, briefly start the container to get /etc/passwd and /etc/groups from with, then
-# append users and groups to the files and bind the files when the container is finally started.
+# This is done similar to how Singularity iself enables the calling user inside the container environment:
+# First, get the /etc/passwd and /etc/groups from the container image,
+# then append users and groups and bind these when the container is finally started.
 
 # For the manually assembled /etc/passwd and /etc/group files we'll create a temporary directory
 # that'll be deleted automatically once the script exists successfully.
@@ -43,7 +47,7 @@ singularity exec ${IMAGE} cp -p /etc/group ${TEMPDIR}/etc_group
 grep slurm /etc/passwd >> ${TEMPDIR}/etc_passwd
 grep slurm /etc/group >> ${TEMPDIR}/etc_group
 
-# Note that if system users are not managed in /etc/..., we could use getent:
+# Note that if system users are not managed in /etc/... we could use getent:
 # getent passwd | grep slurm >> ${TEMPDIR}/etc_passwd
 # getent group | grep slurm >> ${TEMPDIR}/etc_group
 
