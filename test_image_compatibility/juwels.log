@@ -1,0 +1,241 @@
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv amazonlinux_1.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: amazonlinux_1.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.CJDTplri
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.CJDTplri/etc_passwd:/etc/passwd,tmp.CJDTplri/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639327       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.CJDTplri
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv amazonlinux_2.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: amazonlinux_2.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.AmvkxZ0F
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.AmvkxZ0F/etc_passwd:/etc/passwd,tmp.AmvkxZ0F/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639328       esm test_job hoeflich PD       0:00      1 (Priority)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.AmvkxZ0F
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv centos_6.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.mInu9Pfd
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.mInu9Pfd/etc_passwd:/etc/passwd,tmp.mInu9Pfd/etc_group:/etc/group
+sinfo: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.mInu9Pfd
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv centos_7.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.4fNdZij0
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.4fNdZij0/etc_passwd:/etc/passwd,tmp.4fNdZij0/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639330       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.4fNdZij0
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv centos_8.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.60PsrR96
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.60PsrR96/etc_passwd:/etc/passwd,tmp.60PsrR96/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639331       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.60PsrR96
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv debian_6.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.wI36LHyx
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.wI36LHyx/etc_passwd:/etc/passwd,tmp.wI36LHyx/etc_group:/etc/group
+sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.wI36LHyx
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv debian_7.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.OsFK63WB
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.OsFK63WB/etc_passwd:/etc/passwd,tmp.OsFK63WB/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.OsFK63WB
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv debian_8.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.UIlMYZBv
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.UIlMYZBv/etc_passwd:/etc/passwd,tmp.UIlMYZBv/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639334       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.UIlMYZBv
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv debian_9.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_9.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.zrzeU5Yf
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.zrzeU5Yf/etc_passwd:/etc/passwd,tmp.zrzeU5Yf/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639335       esm test_job hoeflich PD       0:00      1 (Priority)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.zrzeU5Yf
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv debian_10.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_10.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.00d0pYYE
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.00d0pYYE/etc_passwd:/etc/passwd,tmp.00d0pYYE/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639337       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.00d0pYYE
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv ubuntu_10.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_10.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.SyjwlOMQ
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.SyjwlOMQ/etc_passwd:/etc/passwd,tmp.SyjwlOMQ/etc_group:/etc/group
+sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /usr/lib64/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.SyjwlOMQ
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv ubuntu_12.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_12.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.BnwoHXpD
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.BnwoHXpD/etc_passwd:/etc/passwd,tmp.BnwoHXpD/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639338       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.BnwoHXpD
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv ubuntu_14.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_14.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.EGph3RCV
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.EGph3RCV/etc_passwd:/etc/passwd,tmp.EGph3RCV/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639339       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.EGph3RCV
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv ubuntu_16.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_16.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.eiDrCFz0
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.eiDrCFz0/etc_passwd:/etc/passwd,tmp.eiDrCFz0/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639340       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.eiDrCFz0
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv ubuntu_18.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_18.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.hSlKASxl
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.hSlKASxl/etc_passwd:/etc/passwd,tmp.hSlKASxl/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639341       esm test_job hoeflich PD       0:00      1 (Priority)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.hSlKASxl
+-----------------------------------------------
+Will use: ../juwels.conf
+singularity version 3.6.1-1.20200803git8a92cf127.el7
+Will execute: singularity exec --cleanenv ubuntu_20.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_20.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.vNzvlPz4
+SINGULARITYENV_LD_LIBRARY_PATH: /usr/lib64
+SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm,/etc/slurm,/usr/lib64/libmunge.so.2,/var/run/munge,/usr/lib64/liblua-5.1.so,/usr/share/lua/5.1,/usr/lib64/lua/5.1,/opt/jsc/slurm/etc/globres.json,tmp.vNzvlPz4/etc_passwd:/etc/passwd,tmp.vNzvlPz4/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           2639343       esm test_job hoeflich PD       0:00      1 (Resources)
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.vNzvlPz4
+-----------------------------------------------
+CentOS Linux release 7.8.2003 (Core)
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="7"
+PRETTY_NAME="CentOS Linux 7 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:7"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-7"
+CENTOS_MANTISBT_PROJECT_VERSION="7"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="7"
+
+CentOS Linux release 7.8.2003 (Core)
+CentOS Linux release 7.8.2003 (Core)
+-----------------------------------------------
+Linux juwels02.ib.juwels.fzj.de 3.10.0-1127.8.2.el7.x86_64 #1 SMP Tue May 12 16:57:42 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux

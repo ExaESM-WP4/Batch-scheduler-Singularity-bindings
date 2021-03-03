@@ -1,0 +1,259 @@
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv amazonlinux_1.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: amazonlinux_1.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.M6Gzh1Cy
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.M6Gzh1Cy/etc_passwd:/etc/passwd,tmp.M6Gzh1Cy/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456963 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.M6Gzh1Cy
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv amazonlinux_2.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: amazonlinux_2.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.glcgcV6h
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.glcgcV6h/etc_passwd:/etc/passwd,tmp.glcgcV6h/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456971 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.glcgcV6h
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv centos_6.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.CI7o6S1e
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.CI7o6S1e/etc_passwd:/etc/passwd,tmp.CI7o6S1e/etc_group:/etc/group
+sinfo: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+scancel: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.CI7o6S1e
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv centos_7.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.LRc8RsGp
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.LRc8RsGp/etc_passwd:/etc/passwd,tmp.LRc8RsGp/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456975 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.LRc8RsGp
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv centos_8.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: centos_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.gLaFu0fZ
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.gLaFu0fZ/etc_passwd:/etc/passwd,tmp.gLaFu0fZ/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456976 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.gLaFu0fZ
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_6.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_6.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.P05fXUXE
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.P05fXUXE/etc_passwd:/etc/passwd,tmp.P05fXUXE/etc_group:/etc/group
+sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.P05fXUXE
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_7.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_7.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.aWJv0BKU
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.aWJv0BKU/etc_passwd:/etc/passwd,tmp.aWJv0BKU/etc_group:/etc/group
+sinfo: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+scancel: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.aWJv0BKU
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_8.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_8.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.hxj9fNVx
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.hxj9fNVx/etc_passwd:/etc/passwd,tmp.hxj9fNVx/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456980 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.hxj9fNVx
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_9.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_9.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.5UrgJQ6G
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.5UrgJQ6G/etc_passwd:/etc/passwd,tmp.5UrgJQ6G/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456981 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.5UrgJQ6G
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv debian_10.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: debian_10.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.Du3gFJ7z
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.Du3gFJ7z/etc_passwd:/etc/passwd,tmp.Du3gFJ7z/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456982 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.Du3gFJ7z
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_10.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_10.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.rLJ7Xx6w
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.rLJ7Xx6w/etc_passwd:/etc/passwd,tmp.rLJ7Xx6w/etc_group:/etc/group
+sinfo: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+failed to call: sinfo
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by sbatch)
+sbatch: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+scancel: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+squeue: /lib/libc.so.6: version `GLIBC_2.14' not found (required by /cm/shared/batch/slurm/20.02.4/install/lib/slurm/libslurmfull.so)
+Deleting: <path-to-repo>/test_image_compatibility/tmp.rLJ7Xx6w
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_12.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_12.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.GuwTO4b0
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.GuwTO4b0/etc_passwd:/etc/passwd,tmp.GuwTO4b0/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456985 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.GuwTO4b0
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_14.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_14.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.43DJ4rel
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.43DJ4rel/etc_passwd:/etc/passwd,tmp.43DJ4rel/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456986 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.43DJ4rel
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_16.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_16.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.cG5O1b5F
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.cG5O1b5F/etc_passwd:/etc/passwd,tmp.cG5O1b5F/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456987 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.cG5O1b5F
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_18.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_18.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.orA7oxGJ
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.orA7oxGJ/etc_passwd:/etc/passwd,tmp.orA7oxGJ/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456989 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.orA7oxGJ
+-----------------------------------------------
+Will use: ../hlrnb.conf
+singularity version 3.5.3
+Will execute: singularity exec --cleanenv ubuntu_20.04.sif ./fake_workflow_slurm.sh
+Enable host SLURM user for: ubuntu_20.04.sif
+Temporary directory: <path-to-repo>/test_image_compatibility/tmp.OY4tOBxK
+SINGULARITYENV_PREPEND_PATH: /cm/shared/batch/bin
+SINGULARITYENV_LD_LIBRARY_PATH: /cm/shared/batch/slurm/20.02.4/install/lib/slurm
+SINGULARITY_BIND: /cm/shared/batch/bin/sinfo,/cm/shared/batch/bin/squeue,/cm/shared/batch/bin/sbatch,/cm/shared/batch/bin/scancel,/var/run/munge/,/cm/shared/batch/slurm/20.02.4/install/lib/slurm/,/cm/shared/batch/etc/,/usr/lib64/libmunge.so.2,tmp.OY4tOBxK/etc_passwd:/etc/passwd,tmp.OY4tOBxK/etc_group:/etc/group
+successful call: sinfo
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+           5456992 standard9 test_job shkkhoef PD       0:00      1 (WaitingInQueue) 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+Deleting: <path-to-repo>/test_image_compatibility/tmp.OY4tOBxK
+-----------------------------------------------
+CentOS Linux release 7.8.2003 (Core)
+Cluster Manager v8.2
+slave
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="7"
+PRETTY_NAME="CentOS Linux 7 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:7"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-7"
+CENTOS_MANTISBT_PROJECT_VERSION="7"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="7"
+
+CentOS Linux release 7.8.2003 (Core)
+CentOS Linux release 7.8.2003 (Core)
+-----------------------------------------------
+Linux blogin5 3.10.0-1127.10.1.el7.x86_64 #1 SMP Wed Jun 3 14:28:03 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
