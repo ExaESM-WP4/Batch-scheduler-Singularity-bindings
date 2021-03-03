@@ -39,6 +39,11 @@ Will execute: singularity shell --cleanenv centos_8.sif
 Enable host SLURM user for: centos_8.sif
 Temporary directory: .../Batch-scheduler-Singularity-bindings/tmp.d0ma2UHL
 SINGULARITY_BIND: /usr/bin/sinfo,/usr/bin/squeue,/usr/bin/sbatch,/usr/bin/scancel,/usr/lib64/slurm/,/etc/slurm/,/usr/lib64/libmunge.so.2,/var/run/munge/,tmp.d0ma2UHL/etc_passwd:/etc/passwd,tmp.d0ma2UHL/etc_group:/etc/group
+Singularity> sbatch test_job_slurm.sh 
+Submitted batch job 444855
+Singularity> squeue -u smomw260
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
+            444855   cluster test_job smomw260  R       0:02      1 neshcl119 
 Singularity> exit
 exit
 Deleting: .../Batch-scheduler-Singularity-bindings/tmp.d0ma2UHL
