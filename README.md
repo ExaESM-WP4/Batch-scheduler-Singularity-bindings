@@ -14,14 +14,14 @@ There are a few specific HPC usage scenarios that have motivated this wrapper,
 
 ## Functionality
 
-Please note, for SLURM only `sinfo`, `squeue`, `sbatch` and `scancel` and for PBS only `qsub`, `qstat`, and `qdel` are currently supported.
+Please note, for SLURM only `sinfo`, `squeue`, `sbatch` and `scancel` are currently supported.
 
 ## Usage instructions
 
 Before you can use the `bind_scheduler.sh` wrapper you have to provide the configuration for your HPC system. This is done by setting up a soft link,
 
 ```shell
-$ ln -sf juwels.conf scheduler-bindings.conf
+$ ln -sf nesh.conf scheduler-bindings.conf
 ```
 
 ```shell
@@ -43,11 +43,11 @@ Deleting: <path-to-script>/tmp.CU7R16oG
 
 As already state above, the wrapper script bind mounts system users, executables, shared libraries and configuration files from the HPC systems's batch scheduler into the container's file system.
 Most operating systems deployed on HPC systems are glibc-based, therefore currently only container images based on the glibc-implementation are expected to work (note, e.g., that Alpine images are musl-based and therefore not compatible).
-To give an overview, for the [most popular Docker container base image](https://hub.docker.com/search?type=image&image_filter=official&category=base) versions a few dedicated [compatibility tests](./test_image_compatibility) have been done on the supported HPC systems.
+To give an overview, for the [most popular Docker container base image versions](https://hub.docker.com/search?type=image&image_filter=official&category=base) a few dedicated [compatibility tests](./test_image_compatibility) have been done on the supported HPC systems.
 
 | HPC system | Singularity | compatible | not compatible |
-| ---------: | :-----: | ------------- | ----- |
-| NESH<br>Redhat-7.5_3.10.0<br>PBS | v3.5.3 | Ubuntu: 12, 14, 16, 18, 20<br>CentOS: 7, 8<br>Debian: 8, 9, 10<br>Amazon Linux: 1, 2<br> | Ubuntu: 10<br>CentOS: 6<br>Debian: 6, 7<br>--- |
+| ---------: | :---------: | ---------- | -------------- |
+| NESH<br>Redhat-8.2_4.18.0<br>SLURM_20.02.4 | v3.5.2 | Ubuntu: 18, 20<br>CentOS: 8<br>Debian:  10<br>--- | Ubuntu: 10, 12, 14, 16<br>CentOS: 6, 7<br>Debian: 6, 7, 8, 9<br>Amazon Linux: 1, 2 |
 | JUWELS<br>CentOS-7.8_3.10.0<br>SLURM | v3.6.1 | Ubuntu: 12, 14, 16, 18, 20<br>CentOS: 7, 8<br>Debian: 8, 9, 10<br>Amazon Linux: 1, 2 | Ubuntu: 10<br>CentOS: 6<br>Debian: 6, 7<br>--- |
 | HLRN-B<br>Redhat-7.8_3.10.0<br>SLURM | v3.5.3 | Ubuntu: 12, 14, 16, 18, 20<br>CentOS: 7, 8<br>Debian: 8, 9, 10<br>Amazon Linux: 1, 2 | Ubuntu: 10<br>CentOS: 6<br>Debian: 6, 7<br>--- |
 | HLRN-G<br>Redhat-7.8_3.10.0<br>SLURM | v3.2.1 | ---<br>CentOS: 7, 8<br>---<br>Amazon Linux: 1, 2 | Ubuntu: 10, 12, 14, 16, 18, 20<br>CentOS: 6<br>Debian: 6, 7, 8, 9, 10<br>--- |
