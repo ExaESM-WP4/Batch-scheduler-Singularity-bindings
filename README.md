@@ -26,8 +26,7 @@ $ cd Batch-scheduler-Singularity-bindings
 $ ln -sf nesh.conf scheduler-bindings.conf
 ```
 
-Example output,
-
+Example output:
 ```shell
 $ singularity pull docker://centos:8
 $ ./bind_scheduler.sh singularity shell --cleanenv centos_8.sif
